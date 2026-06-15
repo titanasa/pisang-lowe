@@ -811,13 +811,11 @@
     <span class="section-count" aria-label="8 layanan tersedia">8 tersedia</span>
   </div>
 
-  <div class="bento" role="list">
+  <div class="bento" role="group" aria-label="Daftar 8 layanan internal">
 
     <!-- 01 ─ Kinerja Pegawai (Punggawa Torang) · menu · most-used -->
     <button class="card card--primary card--s2"
-            data-num="01"
-            role="listitem"
-            aria-label="Kinerja Pegawai, julukan Punggawa Torang — buka pilihan dokumen kinerja"
+            data-num="01"            aria-label="Kinerja Pegawai, julukan Punggawa Torang — buka pilihan dokumen kinerja"
             onclick="openPunggawa()">
       <div class="card-top">
         <div class="card-icon ci-white" aria-hidden="true">
@@ -836,9 +834,7 @@
 
     <!-- 02 ─ Rapat Virtual (Bakumpul) · menu · data-num="02" fixed for meeting-day JS -->
     <button class="card"
-            data-num="02"
-            role="listitem"
-            aria-label="Rapat Virtual, julukan Bakumpul — buka pilihan jadwal pertemuan"
+            data-num="02"            aria-label="Rapat Virtual, julukan Bakumpul — buka pilihan jadwal pertemuan"
             onclick="openModal('modal-bakumpul')">
       <div class="card-top">
         <div class="card-icon ci-blue" aria-hidden="true">
@@ -860,9 +856,7 @@
        data-num="03"
        href="https://docs.google.com/spreadsheets/d/1b_9knkECGutXTkQEO65zoNIX1mrJr-8W/edit?usp=sharing&ouid=104931296064345110656&rtpof=true&sd=true"
        target="_blank"
-       rel="noopener noreferrer"
-       role="listitem"
-       aria-label="Kalender Kegiatan, julukan Kadompe — buka tautan di tab baru">
+       rel="noopener noreferrer"       aria-label="Kalender Kegiatan, julukan Kadompe — buka tautan di tab baru">
       <div class="card-top">
         <div class="card-icon ci-blue" aria-hidden="true">
           <svg class="ic"><use href="#ic-calendar-event"/></svg>
@@ -880,9 +874,7 @@
 
     <!-- 04 ─ Absensi & Anggaran (Pesan Torang 2.0) · menu -->
     <button class="card card--primary card--s2"
-            data-num="04"
-            role="listitem"
-            aria-label="Absensi dan Anggaran, julukan Pesan Torang 2.0 — buka pilihan layanan"
+            data-num="04"            aria-label="Absensi dan Anggaran, julukan Pesan Torang 2.0 — buka pilihan layanan"
             onclick="openModal('modal-pesan')">
       <div class="card-top">
         <div class="card-icon ci-white" aria-hidden="true">
@@ -904,9 +896,7 @@
        data-num="05"
        href="https://kemenkeu.sharepoint.com/:x:/r/sites/KPPNLUWUK/Shared%20Documents/General/2026/01.%20Subbagian%20Umum/Keuangan/Rencana%20Kerja%20Tahunan%20(RKA)%20TA%202026/RKT%202026.xlsx?d=w4cb2dee0dcf341c18af9d8ebe32dfad9&csf=1&web=1&e=IhP5wi"
        target="_blank"
-       rel="noopener noreferrer"
-       role="listitem"
-       aria-label="Monitoring dan Evaluasi, julukan Maleo — buka tautan di tab baru">
+       rel="noopener noreferrer"       aria-label="Monitoring dan Evaluasi, julukan Maleo — buka tautan di tab baru">
       <div class="card-top">
         <div class="card-icon ci-blue" aria-hidden="true">
           <svg class="ic"><use href="#ic-chart-line"/></svg>
@@ -927,9 +917,7 @@
        data-num="06"
        href="https://kemenkeu.sharepoint.com/:b:/r/sites/KPPNLUWUK/Shared%20Documents/General/2026/01.%20Subbagian%20Umum/Kepegawaian/Jadwal%20Seragam/Pakaian%20DJPb.pdf?csf=1&web=1&e=o4Z0yE"
        target="_blank"
-       rel="noopener noreferrer"
-       role="listitem"
-       aria-label="Jadwal Seragam, julukan Baju Torang — buka tautan di tab baru">
+       rel="noopener noreferrer"       aria-label="Jadwal Seragam, julukan Baju Torang — buka tautan di tab baru">
       <div class="card-top">
         <div class="card-icon ci-wg" aria-hidden="true">
           <svg class="ic"><use href="#ic-shirt"/></svg>
@@ -947,9 +935,7 @@
 
     <!-- 07 ─ Aturan & Dokumen (Baode) · menu · row 3 -->
     <button class="card card--s2"
-            data-num="07"
-            role="listitem"
-            aria-label="Aturan dan Dokumen, julukan Baode — buka pilihan kategori dokumen"
+            data-num="07"            aria-label="Aturan dan Dokumen, julukan Baode — buka pilihan kategori dokumen"
             onclick="openModal('modal-baode')">
       <div class="card-top">
         <div class="card-icon ci-blue" aria-hidden="true">
@@ -969,9 +955,7 @@
     <!-- 08 ─ Layanan TIK (TIK Torang) · link -->
     <a class="card card--surface card--s2"
        data-num="08"
-       href="#"
-       role="listitem"
-       aria-label="Layanan TIK, julukan TIK Torang — buka tautan di tab baru">
+       href="#"       aria-label="Layanan TIK, julukan TIK Torang — buka tautan di tab baru">
       <div class="card-top">
         <div class="card-icon ci-blue" aria-hidden="true">
           <svg class="ic"><use href="#ic-clipboard"/></svg>
@@ -1316,9 +1300,13 @@
   }
 
   function goLink(url, modalId) {
-    document.getElementById(modalId)?.close();
-    if (url && url !== '#') window.open(url, '_blank', 'noopener,noreferrer');
-    else showToast('Tautan layanan ini akan segera tersedia.');
+    if (url && url !== '#') {
+      document.getElementById(modalId)?.close();
+      window.open(url, '_blank', 'noopener,noreferrer');
+    } else {
+      /* Placeholder: biarkan modal tetap terbuka, cukup beri umpan balik */
+      showToast('Tautan layanan ini akan segera tersedia.');
+    }
   }
 
   /* ── URL map Punggawa Torang per dokumen per tahun ── */
@@ -1348,8 +1336,14 @@
 
   function openDocYear(year) {
     const url = docUrls[currentDoc]?.[year] || '#';
-    goLink(url, 'modal-punggawa');
-    resetP();
+    if (url && url !== '#') {
+      document.getElementById('modal-punggawa').close();
+      window.open(url, '_blank', 'noopener,noreferrer');
+      resetP();
+    } else {
+      /* Tahun belum tersedia: tetap di tampilan tahun, beri toast spesifik */
+      showToast('Dokumen ' + currentDoc + ' ' + year + ' akan segera tersedia.');
+    }
   }
 
   function openPunggawa() {
