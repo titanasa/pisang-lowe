@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>PISANG LOWE 2.0 — KPPN Luwuk</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231652c8'/><text x='15' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='17' font-weight='700' fill='%23ffffff' letter-spacing='-1'>PL</text><circle cx='26' cy='7' r='6' fill='%23c89800'/><text x='26' y='10.5' text-anchor='middle' font-family='sans-serif' font-size='7.5' font-weight='700' fill='%23ffffff'>2</text></svg>">
+  <meta name="theme-color" content="#1652c8">
+  <meta name="apple-mobile-web-app-title" content="PISANG LOWE">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tabler Icons — SVG sprite (self-contained, no CDN) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="ic-file-invoice" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/><line x1="9" y1="7" x2="10" y2="7"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="13" y1="17" x2="15" y2="17"/>
+    </symbol>
+    <symbol id="ic-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l4.553 -2.277a1 1 0 0 1 1.447 .894v6.766a1 1 0 0 1 -1.447 .894l-4.553 -2.277v-4z"/><rect x="3" y="6" width="12" height="12" rx="2"/>
+    </symbol>
+    <symbol id="ic-calendar-event" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="4" y="5" width="16" height="16" rx="2"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="4" y1="11" x2="20" y2="11"/><rect x="8" y="15" width="2" height="2"/>
+    </symbol>
+    <symbol id="ic-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z"/><path d="M19 16h-12a2 2 0 0 0 -2 2"/><path d="M9 8h6"/>
+    </symbol>
+    <symbol id="ic-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0 -3 -3.85"/>
+    </symbol>
+    <symbol id="ic-shirt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 4l6 2l-2 4l-3 -1v11h-8v-11l-3 1l-2 -4l6 -2a3 3 0 0 0 6 0z"/>
+    </symbol>
+    <symbol id="ic-chart-line" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="4" y1="19" x2="20" y2="19"/><polyline points="4 15 8 9 12 11 16 6 20 10"/>
+    </symbol>
+    <symbol id="ic-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"/><line x1="12" y1="12" x2="20" y2="7.5"/><line x1="12" y1="12" x2="12" y2="21"/><line x1="12" y1="12" x2="4" y2="7.5"/><line x1="16" y1="5.25" x2="8" y2="9.75"/>
+    </symbol>
+    <symbol id="ic-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="17" y1="7" x2="7" y2="17"/><polyline points="8 7 17 7 17 16"/>
+    </symbol>
+    <symbol id="ic-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="9 6 15 12 9 18"/>
+    </symbol>
+    <symbol id="ic-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+    </symbol>
+    <symbol id="ic-arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="12" y1="5" x2="12" y2="19"/><line x1="18" y1="13" x2="12" y2="19"/><line x1="6" y1="13" x2="12" y2="19"/>
+    </symbol>
+    <symbol id="ic-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="5" y1="12" x2="19" y2="12"/><line x1="5" y1="12" x2="11" y2="18"/><line x1="5" y1="12" x2="11" y2="6"/>
+    </symbol>
+    <symbol id="ic-calendar-week" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="4" y="5" width="16" height="16" rx="2"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="4" y1="11" x2="20" y2="11"/><line x1="7" y1="14" x2="7" y2="17"/><line x1="10" y1="14" x2="10" y2="17"/><line x1="13" y1="14" x2="13" y2="17"/><line x1="16" y1="14" x2="16" y2="17"/>
+    </symbol>
+    <symbol id="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 17a5 5 0 0 1 10 0"/><line x1="12" y1="3" x2="12" y2="5"/><line x1="3" y1="11" x2="5" y2="11"/><line x1="11" y1="7" x2="10" y2="6"/><line x1="13" y1="7" x2="14" y2="6"/><line x1="19" y1="11" x2="21" y2="11"/><line x1="3" y1="17" x2="21" y2="17"/>
+    </symbol>
+    <symbol id="ic-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"/><rect x="9" y="3" width="6" height="4" rx="2"/><line x1="9" y1="12" x2="9.01" y2="12"/><line x1="13" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="9.01" y2="16"/><line x1="13" y1="16" x2="15" y2="16"/>
+    </symbol>
+    <symbol id="ic-file-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/><line x1="9" y1="9" x2="10" y2="9"/>
+    </symbol>
+    <symbol id="ic-notes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="5" y="3" width="14" height="18" rx="2"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="13" y2="15"/>
+    </symbol>
+    <symbol id="ic-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="9" r="6"/><polyline points="9 14.2 9 21 12 19 15 21 15 14.2"/><line x1="9.1" y1="11.3" x2="6.3" y2="16"/><line x1="14.9" y1="11.3" x2="17.7" y2="16"/>
+    </symbol>
+    <symbol id="ic-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="9"/>
+    </symbol>
+    <symbol id="ic-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 14.5 15.5"/>
+    </symbol>
+    <symbol id="ic-chart-bar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="3" y="12" width="6" height="8" rx="1"/><rect x="9" y="8" width="6" height="12" rx="1"/><rect x="15" y="4" width="6" height="16" rx="1"/><line x1="4" y1="20" x2="18" y2="20"/>
+    </symbol>
+    <symbol id="ic-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 4h4l3 3h7a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-11a2 2 0 0 1 2 -2"/>
+    </symbol>
+    <symbol id="ic-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><rect x="4" y="5" width="16" height="16" rx="2"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="4" y1="11" x2="20" y2="11"/><line x1="11" y1="15" x2="12" y2="15"/><line x1="12" y1="15" x2="12" y2="18"/>
+    </symbol>
+    <symbol id="ic-presentation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/><line x1="3" y1="4" x2="21" y2="4"/><path d="M4 4v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-10"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="9" y1="8" x2="9.01" y2="8"/><line x1="15" y1="8" x2="15.01" y2="8"/><line x1="9" y1="12" x2="15" y2="12"/>
+    </symbol>
+  </svg>
+
+  <style>
+    /* =============================================
+       PISANG LOWE 2.0
+       impeccable · Emil Kowalski · taste-frontend
+       Palette A — DJPb Biru · OKLCH
+       Audit-hardened v3 — WCAG AA compliant
+       ============================================= */
+    :root {
+      /* ── Surface & backgrounds ── */
+      --bg:         oklch(1.000 0.000 0);
+      --surface:    oklch(0.975 0.008 253);
+
+      /* ── Brand primary (DJPb Biru) ── */
+      --primary:    oklch(0.460 0.190 253);
+      --primary-dk: oklch(0.310 0.150 253);
+      --primary-lt: oklch(0.932 0.022 253);
+
+      /* ── Brand accent (Emas) ── */
+      --accent:     oklch(0.750 0.155 73);
+      --accent-dk:  oklch(0.560 0.158 73);
+      --accent-lt:  oklch(0.962 0.032 73);
+
+      /* ── Ink & text ── */
+      --ink:        oklch(0.130 0.040 253);
+      --muted:      oklch(0.490 0.058 253);   /* bumped: was 0.52, now passes 4.5:1 on white */
+      --border:     oklch(0.908 0.020 253);
+      --border-md:  oklch(0.848 0.036 253);
+
+      /* ── On-primary text (white family — WCAG AA safe) ── */
+      --on-primary:     oklch(1.000 0.000 0);         /* white — 8:1+ contrast on primary */
+      --on-primary-dim: oklch(0.880 0.018 253);        /* ~5.5:1 on primary — body text */
+      --on-primary-sub: oklch(0.780 0.020 253);        /* ~4.6:1 on primary — small sub text */
+      --on-primary-faint: oklch(0.680 0.022 253);      /* decorative only — aria-hidden */
+
+      /* ── On-accent text (dark brown family) ── */
+      --on-accent:      oklch(0.220 0.060 55);         /* ~7:1 on accent gold — main text */
+      --on-accent-dim:  oklch(0.320 0.055 55);         /* ~4.8:1 on accent gold — desc text */
+
+      /* ── On-primary-dk text (on dark navy) ── */
+      --on-dk:          oklch(1.000 0.000 0);          /* white on navy */
+      --on-dk-dim:      oklch(0.760 0.028 253);        /* ~4.5:1 on primary-dk */
+
+      /* ── Glass / overlay tokens ── */
+      --glass-white-sm: oklch(1.000 0.000 0 / 0.12);  /* subtle white overlay */
+      --glass-white-md: oklch(1.000 0.000 0 / 0.20);  /* hover white overlay */
+      --glass-rule:     oklch(1.000 0.000 0 / 0.15);  /* horizontal rule on primary */
+
+      /* ── Easing (Emil Kowalski) ── */
+      --ease-out:    cubic-bezier(0.23, 1, 0.32, 1);
+      --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+    }
+    /* ── OKLCH fallback for browsers pre-2023 ── */
+    @supports not (color: oklch(0 0 0)) {
+      :root {
+        --bg:#fff; --surface:#f3f5fb;
+        --primary:#1652c8; --primary-dk:#0f3494; --primary-lt:#e0eaf8;
+        --accent:#c89800; --accent-dk:#8a6a00; --accent-lt:#f5eccb;
+        --ink:#0c1828; --muted:#4e6080;
+        --border:#d5dded; --border-md:#b4c4da;
+        --on-primary:#fff; --on-primary-dim:#ccd9ec;
+        --on-primary-sub:#a8bdd4; --on-primary-faint:#8aa0bc;
+        --on-accent:#301c06; --on-accent-dim:#4d3010;
+        --on-dk:#fff; --on-dk-dim:#8eaac4;
+        --glass-white-sm:rgba(255,255,255,.12);
+        --glass-white-md:rgba(255,255,255,.20);
+        --glass-rule:rgba(255,255,255,.15);
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: var(--surface);
+      color: var(--ink);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    button { font-family: inherit; cursor: pointer; }
+
+    /* SVG icon helper */
+    .ic {
+      display: inline-block;
+      width: 1em; height: 1em;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+
+    /* Skip link — WCAG 2.4.1 */
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 8px;
+      background: var(--accent);
+      color: var(--on-accent);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 6px;
+      z-index: 999;
+    }
+    .skip-link:focus { left: 8px; }
+
+    /* focus-visible — web-design-guidelines */
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    /* ══ NAVBAR ══ */
+    .nav {
+      background: var(--primary-dk);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: env(safe-area-inset-top) 2rem 0;
+      height: calc(44px + env(safe-area-inset-top));
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1.5px solid oklch(0.750 0.155 73 / 0.28);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--on-dk);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+    .nav-logo {
+      width: 28px; height: 28px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .nav-logo img {
+      width: 28px; height: 28px;
+      object-fit: contain;
+    }
+    .nav-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1px;
+    }
+    .nav-clock {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--on-dk);
+      letter-spacing: 0.04em;
+      font-variant-numeric: tabular-nums;
+    }
+    .nav-date {
+      font-size: 9px;
+      font-weight: 500;
+      color: var(--on-dk-dim);
+      letter-spacing: 0.04em;
+    }
+    .nav-inst {
+      font-size: 11px;
+      color: var(--on-dk-dim);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+
+    /* ══ HERO (compact welcome band) ══ */
+    .hero {
+      background: var(--primary);
+      padding: 38px 2rem 56px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 38px;
+      background: var(--surface);
+      border-radius: 22px 22px 0 0;
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* Hero greeting */
+    .hero-greeting {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--on-primary-sub);
+      letter-spacing: 0.02em;
+      margin-bottom: 8px;
+      animation: heroFade 500ms ease;
+    }
+
+    /* Wordmark — single line, compact */
+    .hero-wordmark {
+      font-family: 'DM Serif Display', serif;
+      font-weight: 400;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      animation: heroUp 600ms var(--ease-out);
+      animation-delay: 60ms;
+    }
+    .hero-wm-1 { color: var(--on-primary); font-size: clamp(40px, 6.5vw, 60px); }
+    .hero-wm-2 { color: var(--accent);     font-size: clamp(40px, 6.5vw, 60px); margin-left: 0.26em; }
+    .hero-wm-ver {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.24em;
+      font-weight: 800;
+      vertical-align: super;
+      letter-spacing: 0;
+      opacity: 0.85;
+      margin-left: 4px;
+    }
+
+    /* Tagline (kepanjangan akronim = rasa brand) */
+    .hero-tag {
+      font-size: 13px;
+      font-style: italic;
+      color: var(--on-primary-dim);
+      line-height: 1.55;
+      max-width: 560px;
+      margin-top: 14px;
+      animation: heroFade 700ms ease;
+      animation-delay: 160ms;
+    }
+
+    @keyframes heroUp {
+      from { transform: translateY(14px); opacity: 0.4; }
+      to   { transform: translateY(0);    opacity: 1; }
+    }
+    @keyframes heroFade {
+      from { opacity: 0.35; }
+      to   { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .hero-greeting, .hero-wordmark, .hero-tag { animation: none; }
+    }
+
+    /* ══ MAIN ══ */
+    .main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 2rem 88px;
+    }
+
+    /* Editorial section header */
+    .section-hd {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1.5px solid var(--ink);
+      padding-top: 12px;
+      margin-bottom: 22px;
+    }
+    .section-title {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      text-wrap: balance;
+    }
+    .section-count {
+      font-size: 11px;
+      color: var(--muted);             /* was --border-md (wrong token, now --muted passes 4.5:1) */
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    /* ══ BENTO GRID ══ */
+    .bento {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    /* ══ CARD BASE ══ */
+    .card {
+      background: var(--bg);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      padding: 22px 22px 20px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 164px;
+      text-align: left;
+      width: 100%;
+      appearance: none;
+
+      opacity: 0;
+      transform: translateY(12px);
+      animation: cardIn 340ms var(--ease-out) forwards;
+
+      transition:
+        transform 200ms var(--ease-out),
+        box-shadow 200ms var(--ease-out),
+        border-color 150ms ease;
+    }
+    .card:nth-child(1) { animation-delay: 0ms; }
+    .card:nth-child(2) { animation-delay: 55ms; }
+    .card:nth-child(3) { animation-delay: 110ms; }
+    .card:nth-child(4) { animation-delay: 165ms; }
+    .card:nth-child(5) { animation-delay: 220ms; }
+    .card:nth-child(6) { animation-delay: 275ms; }
+    .card:nth-child(7) { animation-delay: 330ms; }
+    .card:nth-child(8) { animation-delay: 385ms; }
+
+    @keyframes cardIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .card { animation: none; opacity: 1; transform: none; }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 32px oklch(0.460 0.190 253 / 0.10);
+        border-color: var(--border-md);
+      }
+      .card:hover .card-fn { transform: translateX(2px); }
+      .card:hover .card-icon { transform: scale(1.06); }
+      .card:hover .card-action .ic { transform: translateX(3px); }
+    }
+
+    .card:active {
+      transform: scale(0.974) !important;
+      transition: transform 100ms ease-out !important;
+    }
+
+    /* Card variants */
+    .card--primary {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .card--primary:hover {
+        box-shadow: 0 10px 32px oklch(0.460 0.190 253 / 0.32) !important;
+        border-color: var(--primary-dk) !important;
+      }
+    }
+
+    .card--accent {
+      background: var(--accent);
+      border-color: var(--accent-dk);
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .card--accent:hover {
+        box-shadow: 0 10px 32px oklch(0.750 0.155 73 / 0.30) !important;
+      }
+    }
+
+    .card--surface { background: var(--surface); }
+    .card--s2 { grid-column: span 2; }
+
+    /* ══ CARD ANATOMY ══ */
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .card-icon {
+      width: 38px; height: 38px;
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 19px;
+      flex-shrink: 0;
+      transition: transform 200ms var(--ease-out);
+    }
+    .ci-blue  { background: var(--primary-lt); color: var(--primary); }
+    .ci-gold  { background: var(--accent-lt);  color: var(--accent-dk); }
+    .ci-white { background: var(--glass-white-sm); color: var(--on-primary); }
+    .ci-wg    { background: oklch(0.130 0.040 253 / 0.10); color: var(--on-accent); }
+
+    /* Manado nickname chip (julukan layanan — identitas lokal) */
+    .card-nick {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border-md);
+      background: var(--bg);
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .card--primary .card-nick {
+      color: var(--on-primary-dim);
+      border-color: var(--glass-rule);
+      background: var(--glass-white-sm);
+    }
+    .card--accent .card-nick {
+      color: var(--on-accent);
+      border-color: var(--accent-dk);
+      background: oklch(0.130 0.040 253 / 0.06);
+    }
+
+    /* Function title — dominant, readable (Title Case, not all-caps) */
+    .card-bottom { margin-top: auto; padding-top: 16px; }
+    .card-fn {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      margin-bottom: 5px;
+      color: var(--ink);
+      text-wrap: balance;
+      transition: transform 200ms var(--ease-out);
+    }
+    .card-desc {
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .card--primary .card-fn   { color: var(--on-primary); }
+    .card--primary .card-desc { color: var(--on-primary-dim); }  /* WCAG AA */
+    .card--accent  .card-fn   { color: var(--on-accent); }
+    .card--accent  .card-desc { color: var(--on-accent-dim); }   /* WCAG AA */
+
+    /* "Hari Ini" badge — meeting days */
+    .card-today {
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--on-accent);
+      display: inline-block;
+      margin-top: 8px;
+    }
+
+    /* Action row — beda jelas: menu (buka pilihan di sini) vs tautan (ke situs lain) */
+    .card-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+    .card-action .ic { font-size: 15px; transition: transform 180ms var(--ease-out); }
+    .card-action--menu { color: var(--primary); }
+    .card-action--link { color: var(--accent-dk); }
+    .card--primary .card-action--menu { color: var(--on-primary); }
+    .card--primary .card-action--link { color: var(--accent); }
+    .card--accent  .card-action--link { color: var(--on-accent); }
+
+    /* ══ MODAL ══ */
+    dialog {
+      position: fixed;
+      inset: 0;
+      margin: auto;
+      width: calc(100vw - 2rem);
+      max-width: 500px;
+      max-height: 90dvh;
+      min-height: 50dvh;
+      padding: 0;
+      border: none;
+      border-radius: 20px;
+      background: var(--bg);
+      box-shadow: 0 24px 80px rgba(12,24,40,.20);
+      box-shadow: 0 24px 80px oklch(0.130 0.040 253 / 0.20);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transform: scale(0.95);
+      opacity: 0;
+      transition: transform 260ms var(--ease-out), opacity 240ms ease;
+    }
+    dialog[open] { transform: scale(1); opacity: 1; }
+    @starting-style {
+      dialog[open]           { transform: scale(0.95); opacity: 0; }
+      dialog[open]::backdrop { opacity: 0; }
+    }
+    dialog::backdrop {
+      background: rgba(12,24,40,.48);
+      background: oklch(0.130 0.040 253 / 0.48);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+      opacity: 0;
+      transition: opacity 260ms ease;
+    }
+    dialog[open]::backdrop { opacity: 1; }
+    dialog:not([open]) { pointer-events: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      dialog { transition: opacity 150ms ease; transform: none !important; }
+      dialog::backdrop { transition: opacity 150ms ease; }
+    }
+
+    .modal-head {
+      background: var(--primary);
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .modal-badge {
+      font-size: 9px; font-weight: 700;
+      letter-spacing: 0.09em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 3px;
+    }
+    .modal-title {
+      font-size: 17px; font-weight: 900;
+      color: var(--on-primary);
+      letter-spacing: -0.01em; line-height: 1.1;
+      text-wrap: balance;
+    }
+    .modal-sub {
+      font-size: 11px;
+      color: var(--on-primary-dim);    /* was rgba(255,255,255,0.45) — WCAG fix */
+      margin-top: 2px;
+    }
+
+    /* Close button — P1 fix: 40×40px touch target */
+    .modal-x {
+      width: 40px; height: 40px;       /* was 30×30 — too small */
+      border-radius: 9px;
+      background: var(--glass-white-sm);
+      border: none;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--on-primary-dim); font-size: 16px; flex-shrink: 0;
+      transition: background 150ms ease, color 150ms ease, transform 100ms ease-out;
+    }
+    .modal-x:hover { background: var(--glass-white-md); color: var(--on-primary); }
+    .modal-x:active { transform: scale(0.88); }
+
+    .modal-body { padding: 16px 18px 20px; overflow-y: auto; flex: 1; }
+
+    .m-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      margin-bottom: 8px;
+      background: none; width: 100%; text-align: left; appearance: none;
+      transition: background 150ms ease, border-color 150ms ease, transform 100ms ease-out;
+    }
+    .m-item:last-child { margin-bottom: 0; }
+    .m-item:hover { background: var(--surface); border-color: var(--border-md); }
+    .m-item:active { transform: scale(0.98); }
+
+    .m-icon {
+      width: 34px; height: 34px; border-radius: 8px;
+      background: var(--primary-lt); color: var(--primary);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px; flex-shrink: 0;
+    }
+    .m-icon--gold { background: var(--accent-lt); color: var(--accent-dk); }
+    .m-title { font-size: 13px; font-weight: 700; color: var(--ink); }
+    .m-sub   { font-size: 11px; color: var(--muted); margin-top: 1px; }
+    .m-end   {
+      margin-left: auto; font-size: 14px; color: var(--muted); flex-shrink: 0;
+      transition: transform 150ms ease, color 150ms ease;
+    }
+    .m-item:hover .m-end { transform: translateX(3px); color: var(--primary); }
+
+    .modal-back {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 12px; font-weight: 600; color: var(--muted);
+      background: none; border: none; padding: 0; margin-bottom: 14px;
+      transition: color 150ms ease, transform 100ms ease-out;
+    }
+    .modal-back:hover { color: var(--primary); }
+    .modal-back:active { transform: translateX(-3px); }
+
+    .l2-header {
+      display: flex; align-items: center; gap: 10px;
+      padding-bottom: 14px; margin-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+    }
+    .l2-icon {
+      width: 38px; height: 38px; border-radius: 9px;
+      background: var(--primary-lt); color: var(--primary);
+      display: flex; align-items: center; justify-content: center; font-size: 18px;
+    }
+    .l2-title { font-size: 15px; font-weight: 800; color: var(--ink); text-wrap: balance; }
+    .l2-sub   { font-size: 11px; color: var(--muted); margin-top: 1px; }
+    .view { display: none; }
+    .view.on { display: block; }
+
+    /* ══ FOOTER ══ */
+    .footer {
+      background: var(--primary-dk);
+      padding: 28px 2rem 24px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--on-dk-dim);
+      line-height: 1.75;
+      border-top: 1.5px solid oklch(0.750 0.155 73 / 0.20);
+    }
+    .footer strong {
+      color: var(--on-primary);
+      font-weight: 800;
+    }
+    .footer-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      margin-bottom: 18px;
+    }
+    .footer-logos img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.88;
+    }
+
+    /* ══ TOAST (umpan balik tautan placeholder) ══ */
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: max(24px, env(safe-area-inset-bottom));
+      transform: translate(-50%, 16px);
+      background: var(--primary-dk);
+      color: var(--on-dk);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 999px;
+      box-shadow: 0 12px 40px rgba(12,24,40,.28);
+      box-shadow: 0 12px 40px oklch(0.130 0.040 253 / 0.28);
+      z-index: 1000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 240ms ease, transform 240ms var(--ease-out);
+      max-width: calc(100vw - 2rem);
+      text-align: center;
+    }
+    .toast.show { opacity: 1; transform: translate(-50%, 0); }
+    @media (prefers-reduced-motion: reduce) {
+      .toast { transition: opacity 150ms ease; }
+    }
+
+    /* ══ LANDSCAPE COMPACT ══ */
+    @media (max-height: 500px) {
+      .hero { padding: 18px 2rem 40px; }
+      .hero-wm-1, .hero-wm-2 { font-size: clamp(34px, 6vw, 48px); }
+      .hero-greeting { margin-bottom: 4px; }
+      .hero-tag { display: none; }
+    }
+
+    /* ══ RESPONSIVE ══ */
+    @media (max-width: 860px) {
+      .bento { grid-template-columns: repeat(2, 1fr); }
+      .card--s2 { grid-column: span 2; }
+      .hero { padding: 34px 2rem 52px; }
+      .main { padding: 24px 2rem 60px; }
+    }
+    @media (max-width: 560px) {
+      .bento { grid-template-columns: 1fr; }
+      .card--s2 { grid-column: span 1; }
+      .nav { padding: env(safe-area-inset-top) 1rem 0; }
+      .nav-inst { display: none; }
+      .main { padding: 22px 1rem max(60px, env(safe-area-inset-bottom)); }
+      .hero { padding: 30px max(1rem, env(safe-area-inset-right)) 48px max(1rem, env(safe-area-inset-left)); }
+      .hero::after { height: 30px; }
+      .footer { padding-bottom: max(24px, env(safe-area-inset-bottom)); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Skip link — WCAG 2.4.1 Bypass Blocks -->
+<a href="#main-content" class="skip-link">Langsung ke konten</a>
+
+<!-- ══ NAVBAR ══ -->
+<nav class="nav" aria-label="Navigasi utama">
+  <div class="nav-brand" aria-label="PISANG LOWE 2.0">
+    <div class="nav-logo" aria-hidden="true">
+      <img src="Logo_kementerian_keuangan_republik_indonesia.png" alt="" onerror="this.style.display='none'">
+    </div>
+    PISANG LOWE 2.0
+  </div>
+  <div class="nav-center" aria-label="Waktu saat ini">
+    <span class="nav-clock" id="nav-clock">--:--</span>
+    <span class="nav-date" id="nav-date">WITA</span>
+  </div>
+  <div class="nav-inst" aria-label="Instansi">KPPN Luwuk &nbsp;·&nbsp; DJPb &nbsp;·&nbsp; Kemenkeu RI</div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-inner">
+    <p class="hero-greeting" id="hero-greeting" aria-live="polite">Selamat Datang</p>
+    <h1 class="hero-wordmark" id="hero-title">
+      <span class="hero-wm-1">PISANG</span><span class="hero-wm-2">LOWE<span class="hero-wm-ver">2.0</span></span>
+    </h1>
+    <p class="hero-tag">
+      Pilih Inovasi Sa pe Akses, Ngana pe Gawe So Lebih Online, Well-organized, Efisien.
+    </p>
+  </div>
+</section>
+
+<!-- ══ MAIN ══ -->
+<main class="main" id="main-content">
+  <div class="section-hd">
+    <h2 class="section-title">Semua Layanan</h2>
+    <span class="section-count" aria-label="8 layanan tersedia">8 tersedia</span>
+  </div>
+
+  <div class="bento" role="list">
+
+    <!-- 01 ─ Kinerja Pegawai (Punggawa Torang) · menu · most-used -->
+    <button class="card card--primary card--s2"
+            data-num="01"
+            role="listitem"
+            aria-label="Kinerja Pegawai, julukan Punggawa Torang — buka pilihan dokumen kinerja"
+            onclick="openPunggawa()">
+      <div class="card-top">
+        <div class="card-icon ci-white" aria-hidden="true">
+          <svg class="ic"><use href="#ic-users"/></svg>
+        </div>
+        <span class="card-nick">Punggawa Torang</span>
+      </div>
+      <div class="card-bottom">
+        <h3 class="card-fn">Kinerja Pegawai</h3>
+        <p class="card-desc">Dokumen SKP, Manual IKU, HKT, IPR &amp; capaian kinerja pegawai</p>
+      </div>
+      <span class="card-action card-action--menu">
+        <svg class="ic" aria-hidden="true"><use href="#ic-chevron-right"/></svg> Pilih layanan
+      </span>
+    </button>
+
+    <!-- 02 ─ Rapat Virtual (Bakumpul) · menu · data-num="02" fixed for meeting-day JS -->
+    <button class="card"
+            data-num="02"
+            role="listitem"
+            aria-label="Rapat Virtual, julukan Bakumpul — buka pilihan jadwal pertemuan"
+            onclick="openModal('modal-bakumpul')">
+      <div class="card-top">
+        <div class="card-icon ci-blue" aria-hidden="true">
+          <svg class="ic"><use href="#ic-video"/></svg>
+        </div>
+        <span class="card-nick">Bakumpul</span>
+      </div>
+      <div class="card-bottom">
+        <h3 class="card-fn">Rapat Virtual</h3>
+        <p class="card-desc">Link KATIRI &amp; Morning Briefing internal</p>
+      </div>
+      <span class="card-action card-action--menu">
+        <svg class="ic" aria-hidden="true"><use href="#ic-chevron-right"/></svg> Pilih jadwal
+      </span>
+    </button>
+
+    <!-- 03 ─ Kalender Kegiatan (Kadompe) · link -->
+    <a class="card"
+       data-num="03"
+       href="https://docs.google.com/spreadsheets/d/1b_9knkECGutXTkQEO65zoNIX1mrJr-8W/edit?usp=sharing&ouid=104931296064345110656&rtpof=true&sd=true"
+       target="_blank"
+       rel="noopener noreferrer"
+       role="listitem"
+       aria-label="Kalender Kegiatan, julukan Kadompe — buka tautan di tab baru">
+      <div class="card-top">
+        <div class="card-icon ci-blue" aria-hidden="true">
+          <svg class="ic"><use href="#ic-calendar-event"/></svg>
+        </div>
+        <span class="card-nick">Kadompe</span>
+      </div>
+      <div class="card-bottom">
+        <h3 class="card-fn">Kalender Kegiatan</h3>
+        <p class="card-desc">Agenda &amp; monitoring program/event kantor</p>
+      </div>
+      <span class="card-action card-action--link">
+        <svg class="ic" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg> Buka tautan
+      </span>
+    </a>
+
+    <!-- 04 ─ Absensi & Anggaran (Pesan Torang 2.0) · menu -->
+    <button class="card card--primary card--s2"
+            data-num="04"
+            role="listitem"
+            aria-label="Absensi dan Anggaran, julukan Pesan Torang 2.0 — buka pilihan layanan"
+            onclick="openModal('modal-pesan')">
+      <div class="card-top">
+        <div class="card-icon ci-white" aria-hidden="true">
+          <svg class="ic"><use href="#ic-file-invoice"/></svg>
+        </div>
+        <span class="card-nick">Pesan Torang 2.0</span>
+      </div>
+      <div class="card-bottom">
+        <h3 class="card-fn">Absensi &amp; Anggaran</h3>
+        <p class="card-desc">Rekap absensi pegawai &amp; monitoring anggaran</p>
+      </div>
+      <span class="card-action card-action--menu">
+        <svg class="ic" aria-hidden="true"><use href="#ic-chevron-right"/></svg> Pilih layanan
+      </span>
+    </button>
+
+    <!-- 05 ─ Monitoring & Evaluasi (Maleo) · link -->
+    <a class="card"
+       data-num="05"
+       href="https://kemenkeu.sharepoint.com/:x:/r/sites/KPPNLUWUK/Shared%20Documents/General/2026/01.%20Subbagian%20Umum/Keuangan/Rencana%20Kerja%20Tahunan%20(RKA)%20TA%202026/RKT%202026.xlsx?d=w4cb2dee0dcf341c18af9d8ebe32dfad9&csf=1&web=1&e=IhP5wi"
+       target="_blank"
+       rel="noopener noreferrer"
+       role="listitem"
+       aria-label="Monitoring dan Evaluasi, julukan Maleo — buka tautan di tab baru">
+      <div class="card-top">
+        <div class="card-icon ci-blue" aria-hidden="true">
+          <svg class="ic"><use href="#ic-chart-line"/></svg>
+        </div>
+        <span class="card-nick">Maleo</span>
+      </div>
+      <div class="card-bottom">
+        <h3 class="card-fn">Monitoring &amp; Evaluasi</h3>
+        <p class="card-desc">Analisis &amp; evaluasi layanan organisasi</p>
+      </div>
+      <span class="card-action card-action--link">
+        <svg class="ic" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg> Buka tautan
+      </span>
+    </a>
+
+    <!-- 06 ─ Jadwal Seragam (Baju Torang) · link · accent -->
+    <a class="card card--accent"
+       data-num="06"
+       href="https://kemenkeu.sharepoint.com/:b:/r/sites/KPPNLUWUK/Shared%20Documents/General/2026/01.%20Subbagian%20Umum/Kepegawaian/Jadwal%20Seragam/Pakaian%20DJPb.pdf?csf=1&web=1&e=o4Z0yE"
+       target="_blank"
+       rel="noopener noreferrer"
+       role="listitem"
+       aria-label="Jadwal Seragam, julukan Baju Torang — buka tautan di tab baru">
+      <div class="card-top">
+        <div class="card-icon ci-wg" aria-hidden="true">
+          <svg class="ic"><use href="#ic-shirt"/></svg>
+        </div>
+        <span class="card-nick">Baju Torang</span>
+      </div>
+      <div class="card-bottom">
+        <h3 class="card-fn">Jadwal Seragam</h3>
+        <p class="card-desc">Panduan berpakaian &amp; jadwal seragam pegawai</p>
+      </div>
+      <span class="card-action card-action--link">
+        <svg class="ic" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg> Buka tautan
+      </span>
+    </a>
+
+    <!-- 07 ─ Aturan & Dokumen (Baode) · menu · row 3 -->
+    <button class="card card--s2"
+            data-num="07"
+            role="listitem"
+            aria-label="Aturan dan Dokumen, julukan Baode — buka pilihan kategori dokumen"
+            onclick="openModal('modal-baode')">
+      <div class="card-top">
+        <div class="card-icon ci-blue" aria-hidden="true">
+          <svg class="ic"><use href="#ic-book"/></svg>
+        </div>
+        <span class="card-nick">Baode</span>
+      </div>
+      <div class="card-bottom">
+        <h3 class="card-fn">Aturan &amp; Dokumen</h3>
+        <p class="card-desc">Bacaan aturan &amp; dokumen operasional esensial</p>
+      </div>
+      <span class="card-action card-action--menu">
+        <svg class="ic" aria-hidden="true"><use href="#ic-chevron-right"/></svg> Pilih kategori
+      </span>
+    </button>
+
+    <!-- 08 ─ Layanan TIK (TIK Torang) · link -->
+    <a class="card card--surface card--s2"
+       data-num="08"
+       href="#"
+       role="listitem"
+       aria-label="Layanan TIK, julukan TIK Torang — buka tautan di tab baru">
+      <div class="card-top">
+        <div class="card-icon ci-blue" aria-hidden="true">
+          <svg class="ic"><use href="#ic-clipboard"/></svg>
+        </div>
+        <span class="card-nick">TIK Torang</span>
+      </div>
+      <div class="card-bottom">
+        <h3 class="card-fn">Layanan TIK</h3>
+        <p class="card-desc">Permintaan layanan teknologi informasi &amp; komunikasi</p>
+      </div>
+      <span class="card-action card-action--link">
+        <svg class="ic" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg> Buka tautan
+      </span>
+    </a>
+
+  </div>
+</main>
+
+<!-- ══ FOOTER ══ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-logos" aria-hidden="true">
+    <img src="Logo_kementerian_keuangan_republik_indonesia.png" alt="" onerror="this.style.display='none'">
+    <img src="logo intress.png" alt="" onerror="this.style.display='none'">
+  </div>
+  <strong>PISANG LOWE 2.0</strong> &nbsp;—&nbsp; Portal Layanan Internal Pegawai<br>
+  KPPN Luwuk &nbsp;·&nbsp; Kanwil DJPb Provinsi Sulawesi Tengah &nbsp;·&nbsp; Kementerian Keuangan RI
+</footer>
+
+<!-- ══ MODAL: BAKUMPUL ══ -->
+<dialog id="modal-bakumpul"
+        aria-label="BAKUMPUL — Pilih pertemuan virtual"
+        aria-modal="true"
+        onclick="backdropClose(event,this)">
+  <div class="modal-head">
+    <div>
+      <div class="modal-badge">Pertemuan Virtual</div>
+      <div class="modal-title">BAKUMPUL</div>
+      <div class="modal-sub">Pilih jadwal pertemuan</div>
+    </div>
+    <button class="modal-x" onclick="this.closest('dialog').close()" aria-label="Tutup modal BAKUMPUL">
+      <svg class="ic" aria-hidden="true"><use href="#ic-x"/></svg>
+    </button>
+  </div>
+  <div class="modal-body">
+    <button class="m-item" onclick="goLink('https://s.kemenkeu.go.id/KATIRI2026','modal-bakumpul')">
+      <div class="m-icon" aria-hidden="true">
+        <svg class="ic"><use href="#ic-calendar-week"/></svg>
+      </div>
+      <div><div class="m-title">KATIRI</div><div class="m-sub" id="katiri-sub">Setiap Selasa · 08.00 WITA</div></div>
+      <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+    </button>
+    <button class="m-item" onclick="goLink('https://s.kemenkeu.go.id/KegiatanDoaBersamaKPPNLuwuk2026','modal-bakumpul')">
+      <div class="m-icon" aria-hidden="true">
+        <svg class="ic"><use href="#ic-clipboard"/></svg>
+      </div>
+      <div><div class="m-title">Morning Briefing</div><div class="m-sub" id="briefing-sub">Setiap Rabu · 08.00 WITA</div></div>
+      <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+    </button>
+  </div>
+</dialog>
+
+<!-- ══ MODAL: BAODE ══ -->
+<dialog id="modal-baode"
+        aria-label="BAODE — Pilih kategori dokumen"
+        aria-modal="true"
+        onclick="backdropClose(event,this)">
+  <div class="modal-head">
+    <div>
+      <div class="modal-badge">Dokumen &amp; Aturan</div>
+      <div class="modal-title">BAODE</div>
+      <div class="modal-sub">Pilih kategori dokumen</div>
+    </div>
+    <button class="modal-x" onclick="this.closest('dialog').close()" aria-label="Tutup modal BAODE">
+      <svg class="ic" aria-hidden="true"><use href="#ic-x"/></svg>
+    </button>
+  </div>
+  <div class="modal-body">
+    <button class="m-item" onclick="goLink('#','modal-baode')">
+      <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-folder"/></svg></div>
+      <div><div class="m-title">Subbagian Umum</div><div class="m-sub">Dokumen administrasi umum &amp; kepegawaian</div></div>
+      <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+    </button>
+    <button class="m-item" onclick="goLink('#','modal-baode')">
+      <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-chart-bar"/></svg></div>
+      <div><div class="m-title">Seksi PDMS</div><div class="m-sub">Pencairan Dana &amp; Manajemen Satker</div></div>
+      <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+    </button>
+    <button class="m-item" onclick="goLink('#','modal-baode')">
+      <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-notes"/></svg></div>
+      <div><div class="m-title">Seksi Vera KI</div><div class="m-sub">Verifikasi, Akuntansi &amp; Kepatuhan Internal</div></div>
+      <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+    </button>
+    <button class="m-item" onclick="goLink('#','modal-baode')">
+      <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-file-text"/></svg></div>
+      <div><div class="m-title">Seksi Bank</div><div class="m-sub">Penyaluran Transfer ke Daerah</div></div>
+      <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+    </button>
+    <button class="m-item" onclick="goLink('https://kemenkeu.sharepoint.com/:f:/r/sites/KPPNLUWUK/Shared%20Documents/General/2025/04.%20Seksi%20Vera%20KI/SOP%20KPPN?csf=1&web=1&e=J9Aeig','modal-baode')">
+      <div class="m-icon m-icon--gold" aria-hidden="true"><svg class="ic"><use href="#ic-clipboard"/></svg></div>
+      <div><div class="m-title">SOP</div><div class="m-sub">Standar Operasional Prosedur KPPN Luwuk</div></div>
+      <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+    </button>
+  </div>
+</dialog>
+
+<!-- ══ MODAL: PESAN TORANG 2.0 ══ -->
+<dialog id="modal-pesan"
+        aria-label="PESAN TORANG 2.0 — Absensi & Anggaran"
+        aria-modal="true"
+        onclick="backdropClose(event,this)">
+  <div class="modal-head">
+    <div>
+      <div class="modal-badge">Absensi &amp; Anggaran</div>
+      <div class="modal-title">PESAN TORANG 2.0</div>
+      <div class="modal-sub">Pilih layanan</div>
+    </div>
+    <button class="modal-x" onclick="this.closest('dialog').close()" aria-label="Tutup modal Pesan Torang">
+      <svg class="ic" aria-hidden="true"><use href="#ic-x"/></svg>
+    </button>
+  </div>
+  <div class="modal-body">
+    <button class="m-item" onclick="goLink('https://kemenkeu.sharepoint.com/:x:/r/sites/KPPNLUWUK/Shared%20Documents/General/2026/01.%20Subbagian%20Umum/Kepegawaian/Rekap%20Presensi%20Pegawai/Rekap%20Absensi%20Pegawai%202026.xlsx?d=w22d080654185485a9ef1bbb08bcca17b&csf=1&web=1&e=tb7fXs','modal-pesan')">
+      <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-calendar-event"/></svg></div>
+      <div><div class="m-title">Rekap Absensi</div><div class="m-sub">Rekap presensi pegawai 2026</div></div>
+      <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+    </button>
+    <button class="m-item" onclick="goLink('#','modal-pesan')">
+      <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-chart-bar"/></svg></div>
+      <div><div class="m-title">Monitoring Anggaran</div><div class="m-sub">Tautan akan segera tersedia</div></div>
+      <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+    </button>
+  </div>
+</dialog>
+
+<!-- ══ MODAL: PUNGGAWA TORANG (2-level) ══ -->
+<dialog id="modal-punggawa"
+        aria-label="PUNGGAWA TORANG — Dokumen Kinerja Pegawai"
+        aria-modal="true"
+        onclick="backdropClose(event,this)">
+  <div class="modal-head">
+    <div>
+      <div class="modal-badge">Kinerja Pegawai</div>
+      <div class="modal-title">PUNGGAWA TORANG</div>
+      <div class="modal-sub" id="p-sub">Pilih jenis dokumen kinerja</div>
+    </div>
+    <button class="modal-x" onclick="closePunggawa()" aria-label="Tutup modal Punggawa Torang">
+      <svg class="ic" aria-hidden="true"><use href="#ic-x"/></svg>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="view on" id="p-v1">
+      <button class="m-item" onclick="toL2('SKP','Sasaran Kinerja Pegawai','ic-award')">
+        <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-award"/></svg></div>
+        <div><div class="m-title">SKP</div><div class="m-sub">Sasaran Kinerja Pegawai</div></div>
+        <svg class="ic m-end" aria-hidden="true"><use href="#ic-chevron-right"/></svg>
+      </button>
+      <button class="m-item" onclick="toL2('Manual IKU','Manual Indikator Kinerja Utama','ic-target')">
+        <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-target"/></svg></div>
+        <div><div class="m-title">Manual IKU</div><div class="m-sub">Manual Indikator Kinerja Utama</div></div>
+        <svg class="ic m-end" aria-hidden="true"><use href="#ic-chevron-right"/></svg>
+      </button>
+      <button class="m-item" onclick="toL2('HKT','Hasil Kerja Tambahan','ic-clock')">
+        <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-clock"/></svg></div>
+        <div><div class="m-title">HKT</div><div class="m-sub">Hasil Kerja Tambahan</div></div>
+        <svg class="ic m-end" aria-hidden="true"><use href="#ic-chevron-right"/></svg>
+      </button>
+      <button class="m-item" onclick="toL2('IPR','Individual Performance Review','ic-chart-bar')">
+        <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-chart-bar"/></svg></div>
+        <div><div class="m-title">IPR</div><div class="m-sub">Individual Performance Review</div></div>
+        <svg class="ic m-end" aria-hidden="true"><use href="#ic-chevron-right"/></svg>
+      </button>
+      <button class="m-item" onclick="toL2('DKO','Dialog Kinerja Organisasi','ic-presentation')">
+        <div class="m-icon" aria-hidden="true"><svg class="ic"><use href="#ic-presentation"/></svg></div>
+        <div><div class="m-title">DKO</div><div class="m-sub">Dialog Kinerja Organisasi</div></div>
+        <svg class="ic m-end" aria-hidden="true"><use href="#ic-chevron-right"/></svg>
+      </button>
+      <button class="m-item" onclick="goLink('https://s.id/PKOKanver2026','modal-punggawa');resetP()">
+        <div class="m-icon m-icon--gold" aria-hidden="true"><svg class="ic"><use href="#ic-presentation"/></svg></div>
+        <div><div class="m-title">PKO Kanver</div><div class="m-sub">Program Kerja Kantor Vertikal 2026</div></div>
+        <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+      </button>
+      <button class="m-item" onclick="goLink('https://edjpb.kemenkeu.go.id/intense/#/','modal-punggawa');resetP()">
+        <div class="m-icon m-icon--gold" aria-hidden="true"><svg class="ic"><use href="#ic-chart-line"/></svg></div>
+        <div><div class="m-title">Aplikasi Intense DJPb</div><div class="m-sub">Monitoring &amp; evaluasi kinerja DJPb</div></div>
+        <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+      </button>
+    </div>
+    <div class="view" id="p-v2">
+      <button class="modal-back" onclick="toL1()">
+        <svg class="ic" aria-hidden="true"><use href="#ic-arrow-left"/></svg> Kembali
+      </button>
+      <div class="l2-header">
+        <div class="l2-icon" id="l2-icon" aria-hidden="true">
+          <svg class="ic"><use href="#ic-award"/></svg>
+        </div>
+        <div>
+          <div class="l2-title" id="l2-title">SKP</div>
+          <div class="l2-sub">Pilih tahun dokumen</div>
+        </div>
+      </div>
+      <button class="m-item" onclick="openDocYear('2024')">
+        <div class="m-icon m-icon--gold" aria-hidden="true"><svg class="ic"><use href="#ic-calendar"/></svg></div>
+        <div><div class="m-title">2024</div><div class="m-sub">Tahun anggaran 2024</div></div>
+        <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+      </button>
+      <button class="m-item" onclick="openDocYear('2025')">
+        <div class="m-icon m-icon--gold" aria-hidden="true"><svg class="ic"><use href="#ic-calendar"/></svg></div>
+        <div><div class="m-title">2025</div><div class="m-sub">Tahun anggaran 2025</div></div>
+        <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+      </button>
+      <button class="m-item" onclick="openDocYear('2026')">
+        <div class="m-icon m-icon--gold" aria-hidden="true"><svg class="ic"><use href="#ic-calendar"/></svg></div>
+        <div><div class="m-title">2026</div><div class="m-sub">Tahun anggaran 2026</div></div>
+        <svg class="ic m-end" aria-hidden="true"><use href="#ic-arrow-up-right"/></svg>
+      </button>
+    </div>
+  </div>
+</dialog>
+
+<!-- ══ TOAST ══ -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script>
+  /* ── Live clock (WITA = Asia/Makassar = UTC+8) ── */
+  function updateClock() {
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString('id-ID', {
+      timeZone: 'Asia/Makassar',
+      hour: '2-digit', minute: '2-digit', second: '2-digit',
+      hour12: false
+    });
+    const dateStr = now.toLocaleDateString('id-ID', {
+      timeZone: 'Asia/Makassar',
+      weekday: 'long', day: 'numeric', month: 'short'
+    });
+    const clockEl = document.getElementById('nav-clock');
+    const dateEl  = document.getElementById('nav-date');
+    if (clockEl) clockEl.textContent = timeStr + ' WITA';
+    if (dateEl)  dateEl.textContent  = dateStr;
+  }
+
+  /* ── Dynamic greeting ── */
+  function updateGreeting() {
+    const hour = parseInt(new Date().toLocaleString('id-ID', {
+      timeZone: 'Asia/Makassar', hour: 'numeric', hour12: false
+    }));
+    let salam;
+    if (hour >= 5  && hour < 11) salam = 'Selamat Pagi, Pegawai KPPN Luwuk';
+    else if (hour >= 11 && hour < 15) salam = 'Selamat Siang, Pegawai KPPN Luwuk';
+    else if (hour >= 15 && hour < 18) salam = 'Selamat Sore, Pegawai KPPN Luwuk';
+    else salam = 'Selamat Malam, Pegawai KPPN Luwuk';
+    const el = document.getElementById('hero-greeting');
+    if (el) el.textContent = salam;
+  }
+
+  /* ── Meeting-day badge on BAKUMPUL ── */
+  function checkMeetingDay() {
+    const day = new Date().toLocaleDateString('id-ID', {
+      timeZone: 'Asia/Makassar', weekday: 'long'
+    });
+    const isSelasa = day === 'Selasa';
+    const isRabu   = day === 'Rabu';
+    if (!isSelasa && !isRabu) return;
+
+    /* Inject "Hari Ini" chip into the BAKUMPUL card body */
+    const bakumpulBody = document.querySelector('[data-num="02"] .card-bottom');
+    if (bakumpulBody && !bakumpulBody.querySelector('.card-today')) {
+      const chip = document.createElement('span');
+      chip.className = 'card-today';
+      chip.textContent = isSelasa ? 'KATIRI · Hari Ini' : 'Briefing · Hari Ini';
+      bakumpulBody.appendChild(chip);
+    }
+
+    /* Update modal sub-text */
+    const katiriSub  = document.getElementById('katiri-sub');
+    const briefSub   = document.getElementById('briefing-sub');
+    if (isSelasa && katiriSub)
+      katiriSub.textContent = 'Hari ini · 08.00 WITA';
+    if (isRabu && briefSub)
+      briefSub.textContent = 'Hari ini · 08.00 WITA';
+
+    /* Update BAKUMPUL modal sub-header */
+    const modalSub = document.querySelector('#modal-bakumpul .modal-sub');
+    if (modalSub) {
+      modalSub.textContent = isSelasa
+        ? 'Hari ini: KATIRI · 08.00 WITA'
+        : 'Hari ini: Morning Briefing · 08.00 WITA';
+    }
+  }
+
+  /* ── Init ── */
+  updateClock();
+  updateGreeting();
+  checkMeetingDay();
+
+  /* Pause clock when tab is hidden — resume and sync immediately on return */
+  let clockInterval = setInterval(updateClock, 1000);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      clearInterval(clockInterval);
+    } else {
+      updateClock();
+      clockInterval = setInterval(updateClock, 1000);
+    }
+  });
+
+  /* Toast — umpan balik ringan (tidak mencuri fokus; diumumkan via aria-live) */
+  let toastTimer;
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    if (!t) return;
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 3200);
+  }
+
+  /* Disable placeholder cards (href="#") — beri umpan balik, jangan buka tab kosong.
+     Saat URL asli dipasang, ganti href="#" dengan URL → handler ini otomatis lepas. */
+  document.querySelectorAll('a.card[href="#"]').forEach(el => {
+    el.removeAttribute('target');
+    el.removeAttribute('rel');
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      showToast('Tautan layanan ini akan segera tersedia.');
+    });
+  });
+
+  function openModal(id) {
+    const dlg = document.getElementById(id);
+    if (!dlg || dlg.open) return;
+    dlg.showModal();
+  }
+
+  function backdropClose(e, dlg) {
+    const r = dlg.getBoundingClientRect();
+    if (e.clientX < r.left || e.clientX > r.right ||
+        e.clientY < r.top  || e.clientY > r.bottom) {
+      dlg.close();
+      if (dlg.id === 'modal-punggawa') resetP();
+    }
+  }
+
+  function goLink(url, modalId) {
+    document.getElementById(modalId)?.close();
+    if (url && url !== '#') window.open(url, '_blank', 'noopener,noreferrer');
+    else showToast('Tautan layanan ini akan segera tersedia.');
+  }
+
+  /* ── URL map Punggawa Torang per dokumen per tahun ── */
+  const docUrls = {
+    'SKP': {
+      '2026': 'https://kemenkeu.sharepoint.com/:f:/r/sites/KPPNLUWUK/Shared%20Documents/General/2026/01.%20Subbagian%20Umum/SFO/V.%20Menjadikan%20strategi%20sebagai%20proses%20perbaikan%20yang%20berkelanjutan/V.A.1.%20Menginput%20PK,%20SKP/SKP%20Seluruh%20Pegawai?csf=1&web=1&e=E0K0Ld',
+      '2025': '#', '2024': '#'
+    },
+    'Manual IKU': {
+      '2026': 'https://kemenkeu.sharepoint.com/:f:/r/sites/KPPNLUWUK/Shared%20Documents/General/2026/01.%20Subbagian%20Umum/SFO/V.%20Menjadikan%20strategi%20sebagai%20proses%20perbaikan%20yang%20berkelanjutan/V.A.1.%20Menginput%20PK,%20SKP/Manual%20IKU%20Seluruh%20Pegawai?csf=1&web=1&e=n0q2Z7',
+      '2025': '#', '2024': '#'
+    },
+    'HKT': {
+      '2026': 'https://kemenkeu.sharepoint.com/:f:/r/sites/KPPNLUWUK/Shared%20Documents/General/2026/01.%20Subbagian%20Umum/Manajemen%20Kinerja/HKT?csf=1&web=1&e=AnZTgC',
+      '2025': '#', '2024': '#'
+    },
+    'IPR': {
+      '2026': 'https://kemenkeu.sharepoint.com/:f:/r/sites/KPPNLUWUK/Shared%20Documents/General/2026/01.%20Subbagian%20Umum/SFO/V.%20Menjadikan%20strategi%20sebagai%20proses%20perbaikan%20yang%20berkelanjutan/V.A.4.%20Kompilasi%20IPR?csf=1&web=1&e=ZOiDeU',
+      '2025': '#', '2024': '#'
+    },
+    'DKO': {
+      '2026': 'https://kemenkeu.sharepoint.com/:f:/r/sites/KPPNLUWUK/Shared%20Documents/General/2026/01.%20Subbagian%20Umum/Manajemen%20Kinerja/DKO?csf=1&web=1&e=KigMWi',
+      '2025': '#', '2024': '#'
+    },
+  };
+  let currentDoc = '';
+
+  function openDocYear(year) {
+    const url = docUrls[currentDoc]?.[year] || '#';
+    goLink(url, 'modal-punggawa');
+    resetP();
+  }
+
+  function openPunggawa() {
+    const dlg = document.getElementById('modal-punggawa');
+    if (!dlg) return;
+    resetP();
+    if (!dlg.open) dlg.showModal();
+  }
+
+  function toL2(name, sub, iconId) {
+    currentDoc = name;
+    document.getElementById('l2-title').textContent = name;
+    document.getElementById('l2-icon').innerHTML =
+      `<svg class="ic" aria-hidden="true"><use href="#${iconId}"/></svg>`;
+    document.getElementById('p-sub').textContent = name + ' — Pilih tahun';
+    document.getElementById('p-v1').classList.remove('on');
+    document.getElementById('p-v2').classList.add('on');
+  }
+
+  function toL1() {
+    document.getElementById('p-v2').classList.remove('on');
+    document.getElementById('p-v1').classList.add('on');
+    document.getElementById('p-sub').textContent = 'Pilih jenis dokumen kinerja';
+  }
+
+  function resetP() {
+    document.getElementById('p-v1').classList.add('on');
+    document.getElementById('p-v2').classList.remove('on');
+    document.getElementById('p-sub').textContent = 'Pilih jenis dokumen kinerja';
+  }
+
+  function closePunggawa() {
+    document.getElementById('modal-punggawa').close(); resetP();
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      const open = document.querySelector('dialog[open]');
+      if (open?.id === 'modal-punggawa') resetP();
+    }
+  });
+</script>
+</body>
+</html>
